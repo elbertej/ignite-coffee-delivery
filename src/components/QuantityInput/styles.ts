@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 
-interface QuantityInputContainerProps {
-  size?: "medium" | "small";
+export interface QuantityInputContainerProps {
+  size: "medium" | "small";
 }
 
-export const QantityInputContainer = styled.div<QuantityInputContainerProps>`
+export const QuantityInputContainer = styled.div<QuantityInputContainerProps>`
   flex: 1;
   background: ${({ theme }) => theme.colors["base-button"]};
   display: flex;
@@ -23,15 +23,19 @@ export const QantityInputContainer = styled.div<QuantityInputContainerProps>`
     &:focus {
       outline: none;
     }
-  };
+  }
 
-  ${({ size }) => size === "medium" && css`
-    padding: 0.5rem;
-  `};
+  ${({ size }) =>
+    size === "medium" &&
+    css`
+      padding: 0.5rem;
+    `}
 
-  ${({ size }) => size === "small" && css`
-    padding: 0.3rem 0.5rem;
-  `};
+  ${({ size }) =>
+    size === "small" &&
+    css`
+      padding: 0.3rem 0.5rem;
+    `}
 `;
 
 export const IconWrapper = styled.button.attrs({
@@ -41,14 +45,14 @@ export const IconWrapper = styled.button.attrs({
   height: 0.875rem;
   border: none;
   background: none;
-  color: ${({ theme }) => theme.colors['brand-purple']};
+  color: ${({ theme }) => theme.colors["brand-purple"]};
   transition: 0.4s;
 
   &:disabled {
     opacity: 0.4;
-  };
+  }
 
   &:not(:disabled):hover {
-    color: ${({ theme }) => theme.colors['brand-purple-dark']};
-  };
+    color: ${({ theme }) => theme.colors["brand-purple-dark"]};
+  }
 `;

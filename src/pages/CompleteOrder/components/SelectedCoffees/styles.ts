@@ -1,5 +1,5 @@
-import { SectionBaseStyle } from './../../styles';
-import styled from 'styled-components';
+import styled from "styled-components";
+import { SectionBaseStyle } from "../../styles";
 
 export const SelectedCoffeesContainer = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ export const DetailsContainer = styled(SectionBaseStyle)`
   flex-direction: column;
 `;
 
-export const ConfirmationSectionContainer = styled.div`
+export const ConfirmationSectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;

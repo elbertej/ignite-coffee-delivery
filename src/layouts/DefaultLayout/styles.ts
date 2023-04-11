@@ -7,4 +7,4 @@ export const LayoutContainer = styled.div`
     margin-right: auto;
     margin-left: auto;
   }
-`
+`;

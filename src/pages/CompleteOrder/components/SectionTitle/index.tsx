@@ -8,7 +8,7 @@ interface SectionTitleProps {
   icon: ReactNode;
 }
 
-export function SectionTitle({ title, subtitle, icon}: SectionTitleProps){
+export function SectionTitle({ title, subtitle, icon }: SectionTitleProps) {
   return (
     <SectionTitleContainer>
       {icon}
@@ -17,5 +17,5 @@ export function SectionTitle({ title, subtitle, icon}: SectionTitleProps){
         <RegularText size="s">{subtitle}</RegularText>
       </div>
     </SectionTitleContainer>
-  )
+  );
 }

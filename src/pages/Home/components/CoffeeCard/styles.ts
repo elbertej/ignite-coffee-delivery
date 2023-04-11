@@ -1,16 +1,15 @@
-import { TitleText, RegularText } from './../../../../components/Typography';
 import styled from "styled-components";
+import { RegularText, TitleText } from "../../../../components/Typography";
 
 export const CoffeeCardContainer = styled.div`
   width: 100%;
   background: ${({ theme }) => theme.colors["base-card"]};
   border-radius: 6px 36px 6px 36px;
   padding: 1.25rem;
+  padding-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-top: 0;
   text-align: center;
 
   img {
@@ -44,8 +43,8 @@ export const Tags = styled.div`
 export const Name = styled(TitleText).attrs({
   size: "s",
   color: "subtitle",
-  weight: 700
 })`
+  font-weight: 700;
   margin-bottom: 0.5rem;
 `;
 
@@ -83,14 +82,14 @@ export const AddCartWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: ${({ theme }) => theme.colors['brand-purple-dark']};
-    color: ${({ theme }) => theme.colors['base-card']};
+    background: ${({ theme }) => theme.colors["brand-purple-dark"]};
+    color: ${({ theme }) => theme.colors["base-card"]};
     border-radius: 6px;
     margin-left: 0.3rem;
-    transition: .4s;
+    transition: 0.4s;
 
     &:hover {
-      background: ${({ theme }) => theme.colors['brand-purple']};
+      background: ${({ theme }) => theme.colors["brand-purple"]};
     }
   }
 `;
